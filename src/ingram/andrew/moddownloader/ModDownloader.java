@@ -1,7 +1,6 @@
 package ingram.andrew.moddownloader;
 
 import java.io.*;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class ModDownloader {
@@ -69,10 +68,10 @@ public class ModDownloader {
 
     static class CustomDownloadListener implements DownloadListener {
         long lastPrintData = -1;
-        private DownloadTask downloadTask;
+        private final DownloadTask DOWNLOAD_TASK;
 
         public CustomDownloadListener(DownloadTask downloadTask) {
-            this.downloadTask = downloadTask;
+            this.DOWNLOAD_TASK = downloadTask;
         }
 
         // must not have a print statement until download bar is finished or else the \r code might mess things up
@@ -120,7 +119,7 @@ public class ModDownloader {
         @Override
         public void startedAllDownloads() {
             System.out.println("Starting to download mods . . . ");
-            printTotalDownloadProgress(0, downloadTask.getTotalFileCount());
+            printTotalDownloadProgress(0, DOWNLOAD_TASK.getTotalFileCount());
         }
 
         @Override
@@ -131,7 +130,7 @@ public class ModDownloader {
         @Override
         public void finishedDownload(String filePath) {
             System.out.println("\nFinished download.\n");
-            printTotalDownloadProgress(downloadTask.getCompletedFileCount(), downloadTask.getTotalFileCount());
+            printTotalDownloadProgress(DOWNLOAD_TASK.getCompletedFileCount(), DOWNLOAD_TASK.getTotalFileCount());
         }
 
         @Override
@@ -162,8 +161,8 @@ public class ModDownloader {
         @Override
         public void createdOutputStream() {
             System.out.println("Created Output Stream.");
-            if (downloadTask.getTotalFileSize() != 0L) {
-                printDownloadProgress(0L, downloadTask.getTotalFileSize());
+            if (DOWNLOAD_TASK.getTotalFileSize() != 0L) {
+                printDownloadProgress(0L, DOWNLOAD_TASK.getTotalFileSize());
             }
         }
 
