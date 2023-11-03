@@ -227,7 +227,7 @@ public class DownloadTask implements Runnable{
 
     @Override
     public void run() {
-
+        //
         // make sure output directory exists
         File tempFile = new File(OUTPUT_FOLDER);
         if (!tempFile.exists()) tempFile.mkdirs();

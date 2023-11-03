@@ -16,6 +16,7 @@ public class ModDownloader {
     }
 
     public void start() {
+        //
         System.out.println("Welcome to Mod Downloader. (2023)");
 
         // init stuff
