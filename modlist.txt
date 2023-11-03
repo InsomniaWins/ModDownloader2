@@ -8,6 +8,12 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/OptiFine_1.16.5_H
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/The_Undergarden-1.16.5-0.5.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/YungsApi-1.16.4-Forge-13.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/architectury-1.32.68.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/byg-1.1.6.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/catalogue-1.6.1-1.16.5.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/cfm-7.0.0pre22-1.16.3.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/citadel-1.8.1-1.16.5.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/cloth-config-4.17.101-forge.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/decorative_blocks-1.16.4-1.7.2.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/goblintraders-1.7.3-1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/iceandfire-2.1.12-1.16.5-patch-1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/letmedespawn-forge-1.16-1.0.2a.jar
