@@ -1,7 +1,10 @@
 package ingram.andrew.moddownloader;
 
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ModDownloader {
 
@@ -16,7 +19,7 @@ public class ModDownloader {
         System.out.println("Welcome to Mod Downloader. (2023)");
 
         // init stuff
-        String outputFolder = "Downloaded Mods/";
+        String outputFolder = System.getProperty("user.home") + "/AppData/Roaming/.minecraft/mods/";
         ArrayList<String> fileList = new ArrayList<>();
 
         // populate file list
@@ -39,31 +42,28 @@ public class ModDownloader {
     }
 
     private void populateFileList(ArrayList<String> fileList) {
-        String fileName = "modlist.txt";
-        File file = new File(fileName);
-        if (!file.exists()) {
-            System.out.println("Failed to open modlist.txt, quitting program.");
-            System.exit(0);
-        }
 
-        FileReader fileReader = null;
-        try {
-            fileReader = new FileReader(file);
-        } catch (FileNotFoundException e) {
-            System.out.println("Failed to open file reader for modlist.txt, quitting program.");
-            System.exit(0);
-        }
-        BufferedReader reader = new BufferedReader(fileReader);
+        System.out.println("Getting mod-list from GitHub . . . ");
+        String modListLink = "https://github.com/InsomniaWins/ModDownloader2/raw/master/modlist.txt";
 
         try {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                fileList.add(line);
+            URL url = new URL(modListLink);
+            Scanner scanner = new Scanner(url.openStream());
+
+            while (scanner.hasNextLine()) {
+                fileList.add(scanner.nextLine());
             }
+
+            scanner.close();
         } catch (IOException e) {
-            System.out.println("Failed to read modlist.txt into fileList ArrayList.");
+            System.out.println("Failed to open/update mod-list, quitting program.");
+            System.out.println("(Make sure you have a stable internet connection.)");
+            System.exit(0);
             throw new RuntimeException(e);
+
         }
+
+        System.out.println("Got mod-list successfully!");
     }
 
     static class CustomDownloadListener implements DownloadListener {

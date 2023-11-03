@@ -1,6 +1,7 @@
 package ingram.andrew.moddownloader;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
@@ -21,7 +22,7 @@ public class DownloadTask implements Runnable{
     public DownloadTask(String outputFolder, ArrayList<String> fileList) {
 
         // uncomment this next line if absolute directory????
-        //outputFolder = outputFolder.startsWith("/") ? outputFolder : "/" + outputFolder;
+        outputFolder = outputFolder.startsWith("/") ? outputFolder : "/" + outputFolder;
         outputFolder = outputFolder.endsWith("/") ? outputFolder : outputFolder + "/";
 
         this.OUTPUT_FOLDER = outputFolder;
@@ -29,103 +30,112 @@ public class DownloadTask implements Runnable{
         this.LISTENERS = new ArrayList<>();
     }
 
+    private boolean fileAlreadyDownloaded(String outputPath) {
+
+        File fileCheck = new File(outputPath);
+
+        boolean exists = fileCheck.exists();
+
+        if (exists) System.out.print(" >> File already exists.");
+
+        return exists;
+
+    }
+
     private void download(String filePath, String outputPath) {
         startedDownload(filePath);
 
-        // open url
-        URL url;
-        try {
-            url = new URL(filePath);
-        } catch (IOException e) {
-            caughtError("Failed to open URL to " + filePath + "!", filePath);
-            e.printStackTrace();
-            return;
-        }
-        openedURL();
+        if (!fileAlreadyDownloaded(outputPath)) {
+            // open url
+            URL url;
+            try {
+                url = new URL(filePath);
+            } catch (IOException e) {
+                caughtError("Failed to open URL to " + filePath + "!", filePath);
+                e.printStackTrace();
+                return;
+            }
+            openedURL();
 
-        // open url connection
-        URLConnection urlConnection;
-        try {
-            urlConnection = url.openConnection();
+            // open url connection
+            URLConnection urlConnection;
+            try {
+                urlConnection = url.openConnection();
 
-        } catch (IOException e) {
-            caughtError("Failed to open URL connection to " + filePath + "!", filePath);
-            e.printStackTrace();
-            return;
-        }
-        openedConnection();
+            } catch (IOException e) {
+                caughtError("Failed to open URL connection to " + filePath + "!", filePath);
+                e.printStackTrace();
+                return;
+            }
+            openedConnection();
 
-        // get file size
-        try {
+            // get file size
+            try {
+                if (urlConnection instanceof HttpURLConnection) {
+                    ((HttpURLConnection) urlConnection).setRequestMethod("HEAD");
+                }
+
+                urlConnection.getInputStream();
+                totalFileSize = urlConnection.getContentLengthLong();
+            } catch (ProtocolException e) {
+                caughtError("Failed to set request method of HttpURLConnection!", filePath);
+                e.printStackTrace();
+                return;
+            } catch (IOException e) {
+                caughtError("Failed to open input stream of HttpURLConnection!", filePath);
+                e.printStackTrace();
+                return;
+            }
             if (urlConnection instanceof HttpURLConnection) {
-                ((HttpURLConnection) urlConnection).setRequestMethod("HEAD");
+                ((HttpURLConnection) urlConnection).disconnect();
             }
+            gotFileSize(totalFileSize);
 
-            urlConnection.getInputStream();
-            totalFileSize = urlConnection.getContentLengthLong();
-        } catch (ProtocolException e) {
-            caughtError("Failed to set request method of HttpURLConnection!", filePath);
-            e.printStackTrace();
-            return;
-        } catch (IOException e) {
-            caughtError("Failed to open input stream of HttpURLConnection!", filePath);
-            e.printStackTrace();
-            return;
-        }
-        if (urlConnection instanceof HttpURLConnection) {
-            ((HttpURLConnection) urlConnection).disconnect();
-        }
-        gotFileSize(totalFileSize);
-
-        // create input stream
-        BufferedInputStream inputStream;
-        try {
-            inputStream = new BufferedInputStream(url.openStream());
-        } catch (IOException e) {
-            caughtError("Failed to open input stream!", filePath);
-            e.printStackTrace();
-            return;
-        }
-        createdInputStream();
-
-        // make sure directory exists
-        File tempFile = new File(OUTPUT_FOLDER);
-        if (!tempFile.exists()) tempFile.mkdirs();
-
-        // create output stream
-        BufferedOutputStream outputStream;
-        try {
-            outputStream = new BufferedOutputStream(new FileOutputStream(outputPath));
-        } catch (FileNotFoundException e) {
-            caughtError("Failed to open output stream!", filePath);
-            e.printStackTrace();
-            return;
-        }
-        createdOutputStream();
-
-        // download data
-        currentFileSize = 0;
-        downloadProgressChanged();
-        try {
-            int byteDatum = inputStream.read();
-            while (byteDatum != -1) {
-                currentFileSize++;
-                outputStream.write(byteDatum);
-
-                // send event to listeners that data has been received
-                downloadProgressChanged();
-
-                byteDatum = inputStream.read();
+            // create input stream
+            BufferedInputStream inputStream;
+            try {
+                inputStream = new BufferedInputStream(url.openStream());
+            } catch (IOException e) {
+                caughtError("Failed to open input stream!", filePath);
+                e.printStackTrace();
+                return;
             }
-            inputStream.close();
-            outputStream.close();
+            createdInputStream();
 
-        } catch (IOException e) {
-            caughtError("Failed to download datum from URL!", filePath);
-            e.printStackTrace();
-            return;
+            // create output stream
+            BufferedOutputStream outputStream;
+            try {
+                outputStream = new BufferedOutputStream(new FileOutputStream(outputPath));
+            } catch (FileNotFoundException e) {
+                caughtError("Failed to open output stream!", filePath);
+                e.printStackTrace();
+                return;
+            }
+            createdOutputStream();
+
+            // download data
+            currentFileSize = 0;
+            downloadProgressChanged();
+            try {
+                int byteDatum = inputStream.read();
+                while (byteDatum != -1) {
+                    currentFileSize++;
+                    outputStream.write(byteDatum);
+
+                    // send event to listeners that data has been received
+                    downloadProgressChanged();
+
+                    byteDatum = inputStream.read();
+                }
+                inputStream.close();
+                outputStream.close();
+
+            } catch (IOException e) {
+                caughtError("Failed to download datum from URL!", filePath);
+                e.printStackTrace();
+                return;
+            }
         }
-
         // complete :)
         completedFileCount++;
         finishedDownload(filePath);
@@ -217,11 +227,35 @@ public class DownloadTask implements Runnable{
 
     @Override
     public void run() {
+
+        // make sure output directory exists
+        File tempFile = new File(OUTPUT_FOLDER);
+        if (!tempFile.exists()) tempFile.mkdirs();
+
+        // get list of file names from url-list
+        ArrayList<String> fileNameList = new ArrayList<>(FILE_LIST);
+        fileNameList.replaceAll(this::getFileNameFromFileUrl);
+
+        // remove all unnecessary or old mods from folder
+        File[] directoryListing = tempFile.listFiles();
+        if (directoryListing != null) {
+            for (File file : directoryListing) {
+                if (!fileNameList.contains(file.getName())) {
+                    System.out.println("Removed file: " + file.getName());
+                    file.delete();
+                }
+            }
+        }
+
         startedAllDownloads();
         for (String filePath : FILE_LIST) {
-            String fileName = filePath.substring(filePath.lastIndexOf('/')+1);
+            String fileName = getFileNameFromFileUrl(filePath);
             download(filePath, OUTPUT_FOLDER + fileName);
         }
         finishedAllDownloads();
+    }
+
+    private String getFileNameFromFileUrl(String fileUrl) {
+        return fileUrl.substring(fileUrl.lastIndexOf('/')+1);
     }
 }
