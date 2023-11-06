@@ -57,3 +57,4 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/TConstruct-1.16.5
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/AutoRegLib-1.6-49.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/CreativeCore_v2.2.1_mc1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Prism-1.16.5-1.0.1.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/AndrewsChristmasMod_0.1.jar
