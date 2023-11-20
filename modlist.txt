@@ -80,3 +80,4 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/SkyVillage_1.0.0_
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/supplementaries-1.16.5-0.18.7.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/torohealth-1.16.4-forge-4.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Waystones_1.16.5-7.6.4.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/flywheel-1.16-0.2.5.jar
