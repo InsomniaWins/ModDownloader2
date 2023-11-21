@@ -1,6 +1,6 @@
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/additional_lights-1.16.4-2.1.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/AmbientSounds_v3.1.9_mc1.16.5.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrews-wrap-and-run-mod.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrews-wrap-and-run-mod_v1.0.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/appleskin-forge-mc1.16.x-2.5.1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/architectury-1.32.68.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Artifacts-1.16.5-2.10.5.jar
@@ -35,7 +35,6 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/glassential-forge
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/goblintraders-1.7.3-1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/iceandfire-2.1.12-1.16.5-patch-1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Iceberg-1.16.5-1.0.45.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/immersive-armors-1.5.1%2B1.16.5-forge.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Jade-1.16.4-2.8.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/jei-1.16.5-7.8.0.1009.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/journeymap-1.16.5-5.8.5p6.jar
@@ -73,7 +72,7 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/create-mc1.16.5_v
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/DoggyTalents-1.16.5-2.1.15.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/DungeonCrawl-1.16.5-2.3.12.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/gravestone-1.16.5-1.0.7.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/immersive-armors-1.5.1%2B1.16.5-forge.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/immersive-armors-1.5.1+1.16.5-forge.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/itemzoom-1.16.4-2.3.1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/selene-1.16.5-1.9.0.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/SkyVillage_1.0.0_1.16.5.jar
