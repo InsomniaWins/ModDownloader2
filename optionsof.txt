@@ -5,7 +5,7 @@ ofOcclusionFancy:false
 ofSmoothFps:false
 ofSmoothWorld:false
 ofAoLevel:0.0
-ofClouds:0
+ofClouds:1
 ofCloudsHeight:0.0
 ofTrees:1
 ofDroppedItems:0
@@ -15,7 +15,7 @@ ofAnimatedLava:0
 ofAnimatedFire:true
 ofAnimatedPortal:true
 ofAnimatedRedstone:false
-ofAnimatedExplosion:true
+ofAnimatedExplosion:false
 ofAnimatedFlame:false
 ofAnimatedSmoke:false
 ofVoidParticles:false
@@ -24,8 +24,8 @@ ofPortalParticles:false
 ofPotionParticles:false
 ofFireworkParticles:false
 ofDrippingWaterLava:false
-ofAnimatedTerrain:true
-ofAnimatedTextures:true
+ofAnimatedTerrain:false
+ofAnimatedTextures:false
 ofRainSplash:false
 ofLagometer:false
 ofShowFps:false
@@ -58,7 +58,7 @@ ofRenderRegions:false
 ofSmartAnimations:false
 ofDynamicFov:true
 ofAlternateBlocks:true
-ofDynamicLights:1
+ofDynamicLights:2
 ofScreenshotSize:1
 ofCustomEntityModels:true
 ofCustomGuis:true
