@@ -35,7 +35,6 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/enhancedcelestial
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/entityculling-forge-mc1.16.5-1.5.2.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/expandability-2.0.1-forge.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/ferritecore-2.1.1-forge.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/filenames.txt
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/flywheel-1.16-0.2.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/FramedBlocks-2.16.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/glassential-forge-1.16.5-1.1.7.jar
@@ -56,7 +55,7 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Mantle-1.16.5-1.6
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/memoryleakfix-forge-pre1.17-1.1.2.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/modernfix-forge-5.10.0+mc1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/music_player-1.16.5-2.3.2.231.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/notenoughcrashes-4.1.4%2B1.16.5-forge.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/notenoughcrashes-4.1.4-1.16.5-forge.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/OptiFine_1.16.5_HD_U_G8.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/player-animation-lib-forge-0.4.0+1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/polymorph-forge-1.16.5-0.41.jar
