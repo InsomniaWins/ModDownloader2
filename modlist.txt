@@ -39,6 +39,7 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/flywheel-1.16-0.2
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/FramedBlocks-2.16.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/glassential-forge-1.16.5-1.1.7.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/gravestone-1.16.5-1.0.7.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Heart_Container_Mod_1.0.1_1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/iceandfire-2.1.12-1.16.5-patch-1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Iceberg-1.16.5-1.0.45.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/immersive-armors-1.5.1+1.16.5-forge.jar
@@ -62,7 +63,6 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/polymorph-forge-1
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Prism-1.16.5-1.0.1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Quark-r2.4-322.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/selene-1.16.5-1.9.0.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/simplehearts1_1_3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/SkyVillage_1.0.0_1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/structure_gel-1.16.5-1.7.8.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/supplementaries-1.16.5-0.18.7.jar
