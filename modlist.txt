@@ -23,7 +23,6 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/DungeonsMod-1.16.
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/dungeons_plus-1.16.5-1.1.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/entityculling-forge-mc1.16.5-1.5.2.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/ferritecore-2.1.1-forge.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/filelist.txt
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/flywheel-1.16-0.2.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/FramedBlocks-2.16.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/gravestone-1.16.5-1.0.7.jar
