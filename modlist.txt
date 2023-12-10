@@ -1,5 +1,5 @@
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/alexsmobs-1.12.1.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrews-wrap-and-run-mod_v1.6.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrews-wrap-and-run-mod_v1.7.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrewsadditions-1.0.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/appleskin-forge-mc1.16.x-2.5.1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/architectury-1.32.68.jar
@@ -57,4 +57,3 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Waystones_1.16.5-
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/YungsApi-1.16.4-Forge-13.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Chisel-MC1.16.5-2.0.1-alpha.4_1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/CTM-MC1.16.1-1.1.2.6.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrews-wrap-and-run-mod_v1.7.jar
