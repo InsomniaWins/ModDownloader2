@@ -56,4 +56,5 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/u_team_core-1.16.
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/voicechat-forge-1.16.5-2.4.29.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Waystones_1.16.5-7.6.4.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/YungsApi-1.16.4-Forge-13.jar
-
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Chisel-MC1.16.5-2.0.1-alpha.4_1.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/CTM-MC1.16.1-1.1.2.6.jar
