@@ -1,3 +1,6 @@
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/CodeChickenLib-1.16.5-4.0.7.445-universal.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/EnderStorage-1.16.5-2.8.0.170-universal.jar
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/ironchest-1.16.5-11.2.21.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Patchouli-1.16.4-53.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/ExplorersCompass-1.16.5-1.1.2-forge.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/alexsmobs-1.12.1.jar
