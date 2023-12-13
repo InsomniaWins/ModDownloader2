@@ -3,7 +3,6 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/immersive_paintin
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/constructsarmory-forge-2.0.0-alpha.2+1.16.5.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/bettercompat-0.4.2-1.16.5-36.2.34.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/geckolib-forge-1.16.5-3.0.106.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/chaosawakens-1.16.5-0.11.0.1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/CodeChickenLib-1.16.5-4.0.7.445-universal.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/EnderStorage-1.16.5-2.8.0.170-universal.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/ironchest-1.16.5-11.2.21.jar
