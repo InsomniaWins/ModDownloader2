@@ -12,7 +12,6 @@ https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/ironchest-1.16.5-
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/Patchouli-1.16.4-53.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/ExplorersCompass-1.16.5-1.1.2-forge.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/alexsmobs-1.12.1.jar
-https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrews-wrap-and-run-mod_v1.7.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/andrewsadditions-1.0.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/appleskin-forge-mc1.16.x-2.5.1.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/architectury-1.32.68.jar
