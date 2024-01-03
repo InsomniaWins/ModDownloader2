@@ -1,3 +1,4 @@
+https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/constructionwand-1.16.5-2.6.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/FarmersDelight-1.16.5-0.6.0.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/cfm-7.0.0pre22-1.16.3.jar
 https://github.com/InsomniaWins/ModDownloader2/raw/master/Mods/BlockArmor-1.16.5-2.6.4.jar
